@@ -1,0 +1,20 @@
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "simon_marin_ma-application"
+  description: This is a Java Spring boot app with prometheus and loki integration
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+    backstage.io/kubernetes-label-selector: 'entity-id=simon_marin_ma-application'
+    backstage.io/kubernetes-namespace: simon_marin_ma-application-monitoring
+    argocd/app-name: "simon_marin_ma-application"
+  links:
+    - url: https://simon_marin_ma-application.prueba-piloto-stack.eci-idp.click/api/
+      title: Url Shortener App 
+      icon: externalLink
+spec:
+  owner: guests
+  lifecycle: experimental
+  type: service
+  system: "system:default/prueba-piloto-stack"

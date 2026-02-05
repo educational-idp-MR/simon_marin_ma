@@ -26,7 +26,7 @@ spec:
     spec:
       containers:
       - name: simon_marin_ma-application-monitoring
-        image: hello-world:latest #Workflows will update this image
+        image: 116981771521.dkr.ecr.us-east-1.amazonaws.com/simon_marin_ma:0.0.0
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
